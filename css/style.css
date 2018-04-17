@@ -1,0 +1,401 @@
+body {
+  background: white;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+.background-menu {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  margin-bottom: 20px;
+}
+.background-menu #block-for-slider {
+  width: 100%;
+  margin: 0 auto;
+}
+.background-menu #block-for-slider #viewport {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+.background-menu #block-for-slider #viewport #slidewrapper {
+  position: relative;
+  width: calc(400%);
+  transition: 1s;
+  margin: 0;
+  padding: 0;
+}
+.background-menu #block-for-slider #viewport #slidewrapper ul {
+  margin: 0;
+  padding: 0;
+}
+.background-menu #block-for-slider #viewport #slidewrapper ul li {
+  margin: 0;
+  padding: 0;
+}
+.background-menu #block-for-slider #viewport #slidewrapper .slide {
+  width: calc(25%);
+  list-style: none;
+  display: inline;
+  float: left;
+}
+.background-menu .overlay {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+.background-menu .overlay .header {
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+#prev-btn,
+#next-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: calc(25%);
+}
+#prev-btn:hover,
+#next-btn:hover {
+  cursor: pointer;
+}
+#prev-btn {
+  left: 20px;
+}
+#next-btn {
+  right: 20px;
+}
+.kategorii {
+  text-align: center;
+  border-bottom: 1px solid #eeeeee;
+}
+.kategorii h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+.kategorii .info-kategorii {
+  padding: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.kategorii .info-kategorii .on {
+  height: 400px;
+  width: 25%;
+  margin: 10px;
+  background-image: url('../img/Dla_niego.png');
+  background-size: cover;
+}
+.kategorii .info-kategorii .on p {
+  position: relative;
+  background-color: red;
+  top: 70%;
+  left: 46%;
+  right: 0;
+  width: 50%;
+  font-size: 2em;
+  color: white;
+  padding: 2%;
+  text-transform: uppercase;
+}
+.kategorii .info-kategorii .ona {
+  width: 25%;
+  margin: 10px;
+  background-image: url('../img/dla_niej.png');
+  background-size: cover;
+}
+.kategorii .info-kategorii .ona p {
+  position: relative;
+  /* bottom: 0px; */
+  background-color: red;
+  top: 70%;
+  left: 46%;
+  right: 0;
+  width: 50%;
+  font-size: 2em;
+  color: white;
+  padding: 2%;
+  text-transform: uppercase;
+  text-align: left;
+}
+.kategorii .info-kategorii .inne {
+  height: 400px;
+  width: 50%;
+  margin: 10px 10px 10px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.kategorii .info-kategorii .inne .itmes {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  width: 47%;
+}
+.kategorii .info-kategorii .inne .itmes p {
+  position: relative;
+  /* bottom: 0px; */
+  background-color: red;
+  top: 30%;
+  left: 46%;
+  right: 0;
+  width: 50%;
+  font-size: 2em;
+  color: white;
+  padding: 2%;
+  text-transform: uppercase;
+}
+.kategorii .info-kategorii .inne .dzieci {
+  margin-bottom: 5px;
+  background-image: url('../img/dla_dzieci.png');
+  background-size: cover;
+}
+.kategorii .info-kategorii .inne .hoobi {
+  margin-bottom: 5px;
+  background-image: url('../img/hobby.png');
+  background-size: cover;
+}
+.kategorii .info-kategorii .inne .styl {
+  margin-top: 5px;
+  background-image: url('../img/styl.png');
+  background-size: cover;
+}
+.kategorii .info-kategorii .inne .styl p {
+  width: 60%;
+  left: 36%;
+}
+.kategorii .info-kategorii .inne .adrenalina {
+  margin-top: 5px;
+  background-image: url('../img/adrenalin.png');
+  background-size: cover;
+}
+.kategorii .info-kategorii .inne .adrenalina p {
+  width: 55%;
+  left: 41%;
+}
+.bestselery {
+  border-bottom: 1px solid #eeeeee;
+}
+.bestselery h2 {
+  margin: 20px 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.bestselery .bestseler-card {
+  border-bottom: 1px solid #eeeeee;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 10px 20px 10px;
+}
+.bestselery .bestseler-card .card {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  width: 14%;
+  margin: 0 5px;
+  border: 1px solid #dbdbdb;
+}
+.bestselery .bestseler-card .card .zdiecie {
+  height: 145px;
+  background-size: cover;
+  background-position: center right;
+}
+.bestselery .bestseler-card .card .zdiecie p {
+  display: none;
+  margin: 0;
+}
+.bestselery .bestseler-card .card .zdiecie hr {
+  display: none;
+}
+.bestselery .bestseler-card .card .zdiecie img {
+  display: none;
+}
+.bestselery .bestseler-card .card .zdiecie:hover,
+.bestselery .bestseler-card .card .zdiecie :focus,
+.bestselery .bestseler-card .card .zdiecie :active {
+  background-image: none;
+  background-color: #e42c35;
+  z-index: 10;
+}
+.bestselery .bestseler-card .card .zdiecie:hover p,
+.bestselery .bestseler-card .card .zdiecie :focus p,
+.bestselery .bestseler-card .card .zdiecie :active p {
+  display: block;
+  color: white;
+  margin: 0 10px;
+  padding: 10px 0;
+  font-size: .8em;
+  line-height: 1.5em;
+  border-bottom: 1px solid white;
+}
+.bestselery .bestseler-card .card .zdiecie:hover img,
+.bestselery .bestseler-card .card .zdiecie :focus img,
+.bestselery .bestseler-card .card .zdiecie :active img {
+  display: inline-block;
+  padding: 10px 0;
+  margin-left: 10px;
+}
+.bestselery .bestseler-card .card .card-info {
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+.bestselery .bestseler-card .card .card-info h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.bestselery .bestseler-card .card .card-info i {
+  margin: 0;
+  font-size: .8em;
+  color: #c1c1c1;
+}
+.bestselery .bestseler-card .card .card-info p {
+  margin-top: 3px;
+  font-size: 1.1em;
+  color: #e42c35;
+  font-weight: 600;
+}
+.bestselery .bestseler-card .card-1 .zdiecie {
+  background-image: url("../img/jazda.png");
+}
+.bestselery .bestseler-card .card-2 .zdiecie {
+  background-image: url("../img/skok.png");
+}
+.bestselery .bestseler-card .card-3 .zdiecie {
+  background-image: url("../img/gora.png");
+}
+.bestselery .bestseler-card .card-4 .zdiecie {
+  background-image: url("../img/jazda.png");
+}
+.bestselery .bestseler-card .card-5 .zdiecie {
+  background-image: url("../img/skok.png");
+}
+.bestselery .bestseler-card .card-6 .zdiecie {
+  background-image: url("../img/jazda.png");
+}
+@media (min-width: 1024px) {
+  .slide-img {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .kategorii .info-kategorii {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .kategorii .info-kategorii .on {
+    margin: 10px 0;
+    height: 600px;
+    width: 47%;
+  }
+  .kategorii .info-kategorii .ona {
+    margin: 10px 0;
+    width: 47%;
+  }
+  .kategorii .info-kategorii .inne {
+    margin: 0;
+    height: auto;
+    width: 100%;
+  }
+  .kategorii .info-kategorii .inne .itmes {
+    height: 40vh;
+  }
+  .bestselery .bestseler-card .card {
+    width: 30%;
+    margin-top: 10px;
+  }
+  .bestselery .bestseler-card .card .zdiecie {
+    height: 215px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .kategorii .info-kategorii {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .kategorii .info-kategorii .on {
+    height: 400px;
+    width: 47%;
+  }
+  .kategorii .info-kategorii .ona {
+    height: 400px;
+    width: 47%;
+  }
+  .kategorii .info-kategorii .inne {
+    width: 100%;
+  }
+  .kategorii .info-kategorii .inne .itmes {
+    height: 50vh;
+  }
+  .bestselery .bestseler-card .card {
+    width: 47%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .kategorii .info-kategorii .on {
+    height: 75vh;
+    width: 100vw;
+  }
+  .kategorii .info-kategorii .on p {
+    top: 50%;
+  }
+  .kategorii .info-kategorii .ona {
+    height: 75vh;
+    width: 100vw;
+  }
+  .kategorii .info-kategorii .ona p {
+    top: 50%;
+  }
+  .kategorii .info-kategorii .inne {
+    height: auto;
+    width: 100%;
+  }
+  .kategorii .info-kategorii .inne .itmes {
+    width: 100vw;
+    height: 50vh;
+  }
+  .bestselery .bestseler-card .card {
+    width: 70%;
+    margin: auto;
+  }
+}
