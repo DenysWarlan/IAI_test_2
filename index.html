@@ -8,9 +8,152 @@
     <title>IAI_test2</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 </head>
 <body>
+
+
+<nav>
+    <div class="navigatia">
+        <div class="menu">
+            <div class="menu__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu__links">
+                <li><a href="#">Gdzie kupić</a></li>
+                <li><a href="#">Preezen</a></li>
+                <li><a href="#">Jak to działa</a></li>
+                <li><a href="#">Dla firm</a></li>
+                <li><a href="#">Dostawa</a></li>
+                <li><a href="#">Płatność</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="#">Ulubione(0)</a></li>
+                <li><a href="#">
+                    <img src="./img/konto.svg" alt="">
+                    Twoje konto</a></li>
+                <li><a href="#">
+                    <img src="./img/zakup.svg" alt="">2 szt za 254,00 ZŁ</a></li>
+                <input type="text" placeholder="Szykaj...">
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="logo">
+    <img src="./img/logo.png" alt="Logo">
+    <div class="info-prezent">
+        <ul class="lista">
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Prezenty</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Dla kogo</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">miasto</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">okazja</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">promocje</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="akcjii">
+            <li><a href="#">PREZENTY NA ŚWIĘTA</a></li>
+            <li><a href="#">NOWOŚCI</a></li>
+            <li><a href="#">KARTY PODARUNKOWE</a></li>
+            <li><a href="#">PAKIETY PREZENTOWE</a></li>
+            <li><a href="#">dla firm</a></li>
+            <li><a href="#">blog</a></li>
+        </ul>
+        <div class="bilet">
+            <p>bilet do przygody</p>
+        </div>
+    </div>
+</div>
+
+<section class="wyszukiwanie">
+    <div>
+
+        <h1>znajdz <br> <span>najliepszyj prezent</span></h1>
+        <div class="wyszukiwanie-sekcii">
+            <div class="dropdown">
+                <button class="dropbtn">Prezenty</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Prezenty</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Prezenty</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+        <button class="szukaj">szukaj</button>
+    </div>
+
+</section>
+
 
 
 <div class="background-menu ">
@@ -23,20 +166,65 @@
                 <li class="slide"><img src="img/slide.png" alt="4" class="slide-img"></li>
             </ul>
             <div id="prev-next-btns">
-                <div id="prev-btn"></div>
-                <div id="next-btn"></div>
+                <div id="prev-btn">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="36px" height="59px">
+                        <defs>
+                            <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="36px"
+                                    height="59px">
+                                <feOffset in="SourceAlpha" dx="0" dy="-2"/>
+                                <feGaussianBlur result="blurOut" stdDeviation="0"/>
+                                <feFlood flood-color="rgb(0, 0, 0)" result="floodOut"/>
+                                <feComposite operator="atop" in="floodOut" in2="blurOut"/>
+                                <feComponentTransfer>
+                                    <feFuncA type="linear" slope="0.35"/>
+                                </feComponentTransfer>
+                                <feMerge>
+                                    <feMergeNode/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+
+                        </defs>
+                        <g filter="url(#Filter_0)">
+                            <path fill-rule="evenodd" fill-opacity="0.749" fill="rgb(255, 255, 255)"
+                                  d="M36.005,50.975 L28.935,58.046 L8.054,37.165 L8.006,37.213 L0.935,30.142 L0.983,30.094 L0.935,30.047 L8.006,22.975 L8.054,23.023 L28.935,2.142 L36.005,9.213 L15.124,30.094 L36.005,50.975 Z"/>
+                        </g>
+                    </svg>
+                </div>
+                <div id="next-btn">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="36px" height="59px">
+                        <defs>
+                            <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="36px"
+                                    height="59px">
+                                <feOffset in="SourceAlpha" dx="0" dy="-2"/>
+                                <feGaussianBlur result="blurOut" stdDeviation="0"/>
+                                <feFlood flood-color="rgb(0, 0, 0)" result="floodOut"/>
+                                <feComposite operator="atop" in="floodOut" in2="blurOut"/>
+                                <feComponentTransfer>
+                                    <feFuncA type="linear" slope="0.35"/>
+                                </feComponentTransfer>
+                                <feMerge>
+                                    <feMergeNode/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+
+                        </defs>
+                        <g filter="url(#Filter_0)">
+                            <path fill-rule="evenodd" fill-opacity="0.749" fill="rgb(255, 255, 255)"
+                                  d="M35.065,30.142 L27.994,37.213 L27.946,37.165 L7.064,58.046 L-0.005,50.975 L20.875,30.094 L-0.005,9.213 L7.064,2.142 L27.946,23.023 L27.994,22.975 L35.065,30.047 L35.017,30.094 L35.065,30.142 Z"/>
+                        </g>
+                    </svg>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <div class="overlay">
-            <div class="header">
-
-            </div>
-        </div>
-    </div>
-
 </div>
 
 
