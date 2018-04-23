@@ -1,22 +1,27 @@
-;(function($) {
-    var slideNow = 1;
-    var slideCount = $('#slidewrapper').children().length;
-    var translateWidth = 0;
+;(function ($) {
+    var slideNow = 1,
+        slideCount = $('#slidewrapper').children().length,
+        translateWidth = 0,
+        slideTime = 3000;
+        navigatia = $('.navigatia >ul > li'),
+        prezenty = $('.prezenty >ul > li')
+    ;
 
-    $(document).ready(function() {
-        var switchInterval = nextSlide;
 
-        $('#viewport').hover(function() {
+    $(document).ready(function () {
+        var switchInterval = setInterval(nextSlide, slideTime);
+
+        $('#viewport').hover(function () {
             clearInterval(switchInterval);
-        }, function() {
+        }, function () {
             switchInterval = nextSlide;
         });
 
-        $('#next-btn').on('click',function() {
-            nextSlide();
+        $('#next-btn').on('click', function () {
+            switchInterval = setInterval(nextSlide, slideTime);
         });
 
-        $('#prev-btn').on('click',function() {
+        $('#prev-btn').on('click', function () {
             prevSlide();
         });
         $(".logo").on('click', function () {
@@ -57,12 +62,32 @@
     }
 
 
-
-
-        $(function() {
-            $('.menu__icon').on('click', function() {
-                $(this).closest('.menu').toggleClass('menu_state_open');
-            });
+    $(function () {
+        $('.menu__icon').on('click', function () {
+            $(this).closest('.menu').toggleClass('menu_state_open');
         });
+    });
+
+    $('.pytania > div > p').on('click', function () {
+        $(this).toggleClass('open');
+    });
+
+    navigatia.on('click', function (e) {
+        e.preventDefault();
+        if (navigatia.hasClass('active')) {
+            navigatia.removeClass('active');
+            $(this).addClass('active');
+        }
+
+    });
+
+   prezenty.on('click', function (e) {
+        e.preventDefault();
+        if (prezenty.hasClass('active')) {
+            prezenty.removeClass('active');
+            $(this).addClass('active');
+        }
+
+    });
 
 })(jQuery);

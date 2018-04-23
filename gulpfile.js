@@ -8,7 +8,6 @@ var gulp = require('gulp'),
 
 
 
-//LESS
 gulp.task('css', function () {
 
     return gulp.src('./css/less/style.less')
